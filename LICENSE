@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 Abdelrahman
+Copyright (c) 2024 Sircle Technologies
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,36 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Additional Terms for DARV
+
+### Research and Academic Use
+This software is provided for research, educational, and experimental purposes.
+Users are encouraged to cite this work in academic publications.
+
+### Commercial Use
+Commercial use is permitted under the MIT License. However, we appreciate
+attribution and would love to hear about your use cases.
+
+### Safety Notice
+This software involves autonomous code execution and modification. Users are
+responsible for:
+- Understanding the risks of self-modifying code
+- Implementing appropriate safety measures
+- Testing in isolated environments before production use
+- Backing up projects before running DARV
+
+### Contribution
+By contributing to this project, you agree that your contributions will be
+licensed under the same MIT License.
+
+### No Warranty
+THIS SOFTWARE IS EXPERIMENTAL. Use at your own risk. The authors and Sircle
+Technologies are not liable for any damage caused by the use of this software.
+
+---
+
+For questions about licensing:
+legal@sircle.tech
