@@ -55,7 +55,7 @@ darv/
 
 ```bash
 # 1. استنساخ المشروع
-git clone https://github.com/your-username/darv.git
+git clone https://github.com/abkhadr/darv_ads.git
 cd darv
 
 # 2. إنشاء مجلد البناء
