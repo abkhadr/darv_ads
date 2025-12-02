@@ -4,70 +4,66 @@
 #include <string>
 #include <vector>
 #include <chrono>
-#include <map>
 
 namespace darv {
 
-// نتيجة التنفيذ
+// ==================== Project Configuration ====================
+struct ProjectConfig {
+    std::string name;
+    std::string root_path;
+    std::vector<std::string> build_commands;
+    std::vector<std::string> run_commands;
+    int max_cycles = 10;
+    double convergence_threshold = 1.0;
+};
+
+// ==================== Execution Result ====================
 struct ExecutionResult {
-    bool success;
-    int exit_code;
+    bool success = false;
+    int exit_code = 0;
+    double execution_time_ms = 0.0;
     std::string stdout_output;
     std::string stderr_output;
-    double execution_time_ms;
     std::chrono::system_clock::time_point timestamp;
 };
 
-// مقاييس الأداء
+// ==================== Performance Metrics ====================
 struct PerformanceMetrics {
-    double avg_execution_time;
-    double min_execution_time;
-    double max_execution_time;
-    size_t error_count;
-    size_t warning_count;
-    double memory_usage_mb;
-    double cpu_usage_percent;
+    double avg_execution_time = 0.0;
+    double min_execution_time = 0.0;
+    double max_execution_time = 0.0;
+    size_t error_count = 0;
+    size_t warning_count = 0;
+    size_t success_count = 0;
 };
 
-// تقييم الجودة
+// ==================== Quality Evaluation ====================
 struct QualityEvaluation {
-    double overall_score;  // 0-100
+    double overall_score = 0.0;
     PerformanceMetrics metrics;
     std::vector<std::string> issues;
     std::vector<std::string> suggestions;
-    bool needs_improvement;
+    bool needs_improvement = false;
 };
 
-// تحسين مقترح
+// ==================== Improvement Suggestion ====================
 struct Improvement {
     std::string description;
-    std::string patch_content;
     std::string target_file;
-    double expected_impact;  // 0-1
-    int priority;  // 1-10
+    std::string patch_content;
+    double expected_impact = 0.0; // 0-1
+    int priority = 0; // 1-10
 };
 
-// سجل الدورة
+// ==================== Cycle Record ====================
 struct CycleRecord {
-    int cycle_number;
+    int cycle_number = 0;
     std::chrono::system_clock::time_point timestamp;
     ExecutionResult execution;
     QualityEvaluation evaluation;
     std::vector<Improvement> improvements;
-    bool applied_improvements;
+    bool applied_improvements = false;
     std::string notes;
-};
-
-// إعدادات المشروع
-struct ProjectConfig {
-    std::string name;
-    std::string root_path;
-    std::string build_path;
-    std::string executable_name;
-    std::vector<std::string> build_commands;
-    std::vector<std::string> run_commands;
-    int max_cycles;
-    double convergence_threshold;
 };
 
 } // namespace darv

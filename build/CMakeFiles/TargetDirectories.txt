@@ -1,0 +1,12 @@
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/darv.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/test_autograd.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/test_complete_nn.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/test_debug_gradients.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/test_dual_path.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/test_dual_simple.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/edit_cache.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/rebuild_cache.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/list_install_components.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/install.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/install/local.dir
+/home/akhadr/Workstation/darv_ads/build/CMakeFiles/install/strip.dir
